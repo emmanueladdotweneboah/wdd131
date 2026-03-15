@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) {
+
+    /* hide hamburger */
+
+    #menu {
+        display: none;
+    }
+
+    /* NAVIGATION */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: center;
+        gap: 25px;
+        background: none;
+    }
+
+    /* NAV LINKS */
+
+    .navigation a {
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .navigation a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* GALLERY GRID */
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
