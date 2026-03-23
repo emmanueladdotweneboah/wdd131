@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Ghana</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Discover Ghana</h1>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 900px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+            <img src="images/hero-small.webp" alt="Beautiful view of Ghana">
+        </picture>
+    </section>
+
+    <main>
+
+        <!-- INFO SECTION -->
+        <section class="info">
+            <h2>About Ghana</h2>
+            <p>
+                Ghana is a beautiful country located in West Africa known for its rich culture,
+                friendly people, and historical landmarks. The capital city is Accra.
+            </p>
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="weather">
+            <h2 class="weather-title">Weather</h2>
+
+            <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+            <p><strong>Wind Speed:</strong> <span id="wind">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+
+            <!-- Mobile SVG icon -->
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Ghana Page</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
