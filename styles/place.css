@@ -1,17 +1,16 @@
 :root {
     --primary: #ce1126;
-    /* Ghana red */
     --secondary: #fcd116;
-    /* yellow */
-    --dark: #006b3f;
-    /* green */
+    --accent: #006b3f;
     --light: #ffffff;
+    --dark: #222;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: #f9f9f9;
+    color: var(--dark);
 }
 
 /* HEADER */
@@ -19,52 +18,65 @@ header {
     background: var(--primary);
     color: var(--light);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 /* HERO */
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* MAIN */
 main {
-    padding: 1rem;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
 }
 
-/* SECTIONS */
-section {
-    margin-bottom: 2rem;
+/* CARD STYLE */
+.card {
+    background: var(--light);
+    padding: 1.5rem;
+    border-left: 6px solid var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* WEATHER ICON MOBILE */
+/* WEATHER */
+.weather-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .weather-icon {
-    width: 50px;
+    width: 60px;
 }
 
 /* FOOTER */
 footer {
-    background: var(--dark);
+    background: var(--accent);
     color: var(--light);
     text-align: center;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
-/* LARGE VIEW */
+/* MEDIA QUERY */
 @media (min-width: 768px) {
 
     main {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
     }
 
+    /* PSEUDO ELEMENT REQUIRED */
     .weather-title::after {
         content: " ⛅";
-        /* pseudo-element requirement */
     }
 
+    /* Hide SVG on large */
     .weather-icon {
         display: none;
     }
