@@ -1,3 +1,4 @@
+/* CSS VARIABLES */
 :root {
     --primary: #ce1126;
     --secondary: #fcd116;
@@ -6,6 +7,7 @@
     --dark: #222;
 }
 
+/* GLOBAL RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -21,18 +23,22 @@ header {
     padding: 1.5rem;
 }
 
-/* HERO */
+/* HERO IMAGE */
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* MAIN */
+/* MAIN LAYOUT */
 main {
     padding: 1.5rem;
     display: grid;
     gap: 1.5rem;
+
+    /* ADDED FOR BETTER DESIGN */
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* CARD STYLE */
@@ -44,13 +50,26 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* WEATHER */
+/* H2 IMPROVEMENT */
+h2 {
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 5px;
+}
+
+/* HOVER EFFECT (EXTRA POLISH) */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* WEATHER SECTION */
 .weather-content {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+/* SVG ICON (MOBILE) */
 .weather-icon {
     width: 60px;
 }
@@ -64,19 +83,19 @@ footer {
     margin-top: 1rem;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERY (REQUIRED) */
 @media (min-width: 768px) {
 
     main {
         grid-template-columns: 1fr 1fr;
     }
 
-    /* PSEUDO ELEMENT REQUIRED */
+    /* REQUIRED PSEUDO ELEMENT */
     .weather-title::after {
         content: " ⛅";
     }
 
-    /* Hide SVG on large */
+    /* HIDE SVG ON LARGE SCREEN */
     .weather-icon {
         display: none;
     }
