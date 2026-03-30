@@ -1,80 +1,71 @@
-// ===============================
-// 1. TEMPLE DATA (WORKING IMAGES)
-// ===============================
 const temples = [
     {
         name: "Salt Lake Temple",
         location: "Salt Lake City, Utah",
         dedicated: "1893",
         area: 253000,
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Salt_Lake_Temple%2C_Utah.jpg"
+        image: "https://picsum.photos/400/250?random=1"
     },
     {
         name: "Laie Hawaii Temple",
         location: "Laie, Hawaii",
         dedicated: "1919",
         area: 42100,
-        image: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Laie_Hawaii_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=2"
     },
     {
         name: "Accra Ghana Temple",
         location: "Accra, Ghana",
         dedicated: "2004",
         area: 17500,
-        image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Accra_Ghana_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=3"
     },
     {
         name: "Paris France Temple",
         location: "Paris, France",
         dedicated: "2017",
         area: 44000,
-        image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Paris_France_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=4"
     },
     {
         name: "Rome Italy Temple",
         location: "Rome, Italy",
         dedicated: "2019",
         area: 41000,
-        image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rome_Italy_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=5"
     },
     {
         name: "Logan Utah Temple",
         location: "Logan, Utah",
         dedicated: "1884",
         area: 119619,
-        image: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Logan_Utah_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=6"
     },
     {
         name: "Manti Utah Temple",
         location: "Manti, Utah",
         dedicated: "1888",
         area: 74792,
-        image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Manti_Utah_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=7"
     },
     {
         name: "Brigham City Utah Temple",
         location: "Brigham City, Utah",
         dedicated: "2012",
         area: 36000,
-        image: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Brigham_City_Utah_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=8"
     },
     {
         name: "Freiberg Germany Temple",
         location: "Freiberg, Germany",
         dedicated: "1985",
         area: 10000,
-        image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Freiberg_Germany_Temple.jpg"
+        image: "https://picsum.photos/400/250?random=9"
     }
 ];
 
-// ===============================
-// 2. SELECT CONTAINER
-// ===============================
 const container = document.getElementById("temple-container");
 
-// ===============================
-// 3. DISPLAY FUNCTION
-// ===============================
 function displayTemples(filteredTemples) {
     container.innerHTML = "";
 
@@ -94,9 +85,6 @@ function displayTemples(filteredTemples) {
     });
 }
 
-// ===============================
-// 4. FILTER FUNCTION
-// ===============================
 function filterTemples(type) {
     let filtered = [];
 
@@ -124,16 +112,10 @@ function filterTemples(type) {
     displayTemples(filtered);
 }
 
-// ===============================
-// 5. FOOTER
-// ===============================
 document.getElementById("copyright").textContent =
     `© ${new Date().getFullYear()} Emmanuel Tweneboah`;
 
 document.getElementById("lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
-// ===============================
-// 6. INITIAL LOAD
-// ===============================
 displayTemples(temples);
