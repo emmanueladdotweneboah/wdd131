@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+input,
+textarea {
+    margin: 5px 0;
+    padding: 8px;
+}
+
+@media(max-width:600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}

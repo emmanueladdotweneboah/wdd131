@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLab Global</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FactLab Global</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="facts.html">Facts</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1584697964190-a8f9b7f5c0d2" alt="students learning"
+                loading="lazy">
+            <h2>Explore Knowledge Daily</h2>
+            <p>Fun, interactive facts and quizzes to boost your knowledge.</p>
+            <button onclick="location.href='facts.html'">Explore Facts</button>
+        </section>
+
+        <section>
+            <h2>Featured Fact</h2>
+            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc" alt="brain" loading="lazy">
+            <p id="featuredFact">Click below to see a fact!</p>
+            <button id="factBtn">Show Fact</button>
+        </section>
+
+        <section>
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMsg"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FactLab Global</p>
+        <a href="references.html">References</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
